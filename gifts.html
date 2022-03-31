@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: "helvetica neue", helvetica, arial, sans-serif;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #top_cards{
+        
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 10px;
+        grid-template-rows: 50px 50px;
+
+       
+    }
+    #sidebar{
+        border: 1px solid green;
+        width: max-content;
+    }
+    .card{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 50px;
+        border-radius: 5px;
+        width: 200px;
+        padding-left: 5px;
+        
+
+    }
+    .card>div{
+        
+        margin-left: 50px;
+    }
+    .card_img{
+        float: right;
+        height: 24px;
+        width: 24px;
+    }
+    .card>p{
+        
+    }
+</style>
+<body>
+    <div id="sidebar">
+        <h2>Gifts</h2>
+        
+        <p>Value & Gift Sets (311)</p>
+        <p>By Price(722)</p>
+        <p>By Category(675)</p>
+        <p>By Recipient(681)</p>
+        <p>Bestsellers(125)</p>
+        <p>Only at Sephora(171)</p>
+        <p>Luxury Beauty(914)</p>
+
+
+    </div>
+    <div id="top_cards">
+        <div class="card">
+           <p> Gift Cards </p><div> <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/gift_cards.svg" alt="" class="card_img"> </div>
+        </div>
+        <div class="card">
+        <p> Gift Finder </p><div> <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/gift_finder.svg" alt="" class="card_img"></div>
+        </div>
+        <div class="card">
+        <p> Bestsellers</p> <div><img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt="" class="card_img"></div>
+        </div>
+        <div class="card">
+        <p>Mini Size</p> <div> <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg" alt="" class="card_img"></div>
+        </div>
+        <!-- <div class="card">
+        <p>Only at Sephora</p> <div> <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/only_at_sephora.svg" alt="" class="card_img"></div>
+        </div> -->
+        <div class="card">
+        <p>Luxury Beauty</p> <div> <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/luxury_beauty.svg" alt="" class="card_img"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var giftsData = {
+        {
+            img_url:"https://www.sephora.com/productimages/sku/s2535573-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=230",
+            name:"Glow Essentials by Mikayla™ Kit",
+            p:"Glow Recipe",
+            price :"$48",
+        },
+        {
+            img_url:"",
+            name:"",
+            p:","
+        }
+    }
+</script>
